@@ -1,23 +1,12 @@
+import { Home } from "./Pages/Home";
+import "./styles/theme.css";
+import "./styles/global.css";
+import { TaskContextProvider } from "./components/Contexts/TaskContext/TaskContextProvider";
 
-import './styles/theme.css'
-import './styles/global.css'
-import { Heading } from './components/Heading'
-import { Container } from './components/Container'
-function App() {
-  console.log('oi')
+export function App() {
   return (
-   <>
-     <Container>
-        <Heading>
-            LOGO
-        </Heading>
-     </Container>
-     <Container>
-       <Heading>
-           MENU
-       </Heading>
-     </Container>
-   </>
-  )
+    <TaskContextProvider>
+      <Home />
+    </TaskContextProvider>
+  );
 }
-export { App }
