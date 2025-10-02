@@ -1,4 +1,4 @@
-.button{
+.button {
   border: none;
   background: var(--primary);
   color: var(--text-over-primary);
@@ -10,7 +10,7 @@
   border-radius: 0.8rem;
   margin: 4.8rem 0;
   cursor: pointer;
-  transition: all .8s ease-in-out;
+  transition: all 0.1s ease-in-out;
 }
 
 .button svg {
@@ -18,16 +18,16 @@
   height: 3.2rem;
 }
 
-.button:hover{
+.button:hover {
   filter: brightness(80%);
 }
 
-.red{
-  background: var(--error);
-  color: var(--text-over-error);
-}
-
-.green{
+.green {
   background: var(--primary);
   color: var(--text-over-primary);
+}
+
+.red {
+  background: var(--error);
+  color: var(--text-over-error);
 }
